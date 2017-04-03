@@ -64,3 +64,11 @@ byte mdnAnalogButtons::_match_pressed() {
 	// no matching value found
 	return 0;
 }
+
+void mdnAnalogButtons::hold() {
+	// wait until no button is pressed
+	int _v = analogRead(_pin) >> 2;
+	while (abs(_v - _values[0]) > spread) {
+		_v = analogRead(_pin) >> 2;
+	}
+}

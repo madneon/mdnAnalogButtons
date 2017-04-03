@@ -19,6 +19,7 @@ class mdnAnalogButtons {
 		byte spread = 4; // +/- on matching
 
 		byte pop();
+		void hold();
 	private:
 		byte _pin = 0; // analog pin to read
 
