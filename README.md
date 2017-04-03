@@ -2,7 +2,7 @@
 Arduino library for multiple buttons on single analog pin
 
 # Usage
-4 buttons example using 1x10k and 4x1k resistors:
+4 buttons example using 1x10k and 4x1k resistors on A0 pin:
 
 ```
 #include <mdnAnalogButtons.h>
