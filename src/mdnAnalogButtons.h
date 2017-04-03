@@ -16,6 +16,7 @@ class mdnAnalogButtons {
 
 		unsigned long time_delay = 250; // button repeat delay
 		unsigned long time_repeat = 50; // button repeat after delay
+		byte spread = 4; // +/- on matching
 
 		byte pop();
 	private:
@@ -23,7 +24,6 @@ class mdnAnalogButtons {
 
 		byte _count = 0; // number of buttons
 		byte *_values = 0; // values of buttons, 8 highest bits of analogRead(), min. distance = spread*2!
-		byte _spread = 1; // +/- on matching
 
 		byte _pressed_button = 0; // currently pressed button
 		unsigned long _pressed_tick = 0; // tick of first press

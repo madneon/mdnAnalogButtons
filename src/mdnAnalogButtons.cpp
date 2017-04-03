@@ -55,7 +55,7 @@ byte mdnAnalogButtons::_match_pressed() {
 	int _v = analogRead(_pin) >> 2; // 8 highest bits
 
 	for (size_t i = 0; i < _count; i ++){
-		if (abs(_v - _values[i]) <= _spread) { // match within spread range
+		if (abs(_v - _values[i]) <= spread) { // match within spread range
 			// return matching button id
 			return i;
 		}
