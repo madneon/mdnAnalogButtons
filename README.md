@@ -1,4 +1,4 @@
-# repository moved to:
+# This repository moved to:
 https://git.madneon.com/Arduino/mdnAnalogButtons/
 
 # mdnAnalogButtons
