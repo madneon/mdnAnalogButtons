@@ -1,3 +1,6 @@
+# repository moved to:
+https://git.madneon.com/Arduino/mdnAnalogButtons/
+
 # mdnAnalogButtons
 Arduino library for multiple buttons on single analog pin
 
